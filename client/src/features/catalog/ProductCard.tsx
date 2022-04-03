@@ -20,7 +20,6 @@ export default function ProductCard({ product }: Props) {
                     sx: { fontWeight: 'bold', color: 'primary.dark' }
                 }}
             />
-
             < CardMedia
                 sx={{ height: 140, backgroundSize: 'contain', bgcolor: 'primary.light' }}
                 image={product.pictureUrl}
@@ -36,7 +35,8 @@ export default function ProductCard({ product }: Props) {
             </CardContent>
             <CardActions>
                 <Button size="small">Add to cart</Button>
-                <Button component={Link} to={`/catalog/${product.id}`} size="small">View</Button>
+                <Button component={Link} to={`/catalog/${product.id}`}
+                    size="small">View</Button>
             </CardActions>
         </Card >
     )

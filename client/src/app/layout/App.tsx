@@ -31,7 +31,7 @@ function App() {
          <Header darkMode={darkMode} themeChange={themeChange} />
          <Container>
             <Route exact path='/' component={HomePage} />
-            <Route path='/catalog' component={Catalog} />
+            <Route exact path='/catalog' component={Catalog} />
             <Route path='/catalog/:id' component={ProductDetails} />
             <Route path='/about' component={AboutPage} />
             <Route path='/contact' component={ContactPage} />
