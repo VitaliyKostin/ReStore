@@ -2,12 +2,14 @@ import { ThemeProvider } from '@emotion/react';
 import { Container, createTheme, CssBaseline } from '@mui/material';
 import { useState } from 'react';
 import { Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import AboutPage from '../../features/about/AboutPage';
 import Catalog from '../../features/catalog/Catalog';
 import ProductDetails from '../../features/catalog/ProdutcDetails';
 import ContactPage from '../../features/contact/ContactPage';
 import HomePage from '../../features/home/HomePage';
 import Header from './Header';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
    const [darkMode, setDarkMode] = useState(false);
@@ -27,6 +29,7 @@ function App() {
 
    return (
       <ThemeProvider theme={theme}>
+         <ToastContainer position='bottom-right' theme='colored' hideProgressBar />
          <CssBaseline />
          <Header darkMode={darkMode} themeChange={themeChange} />
          <Container>
