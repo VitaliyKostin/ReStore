@@ -8,8 +8,6 @@ import { createBrowserHistory } from 'history';
 import { Provider } from 'react-redux';
 import { store } from './app/store/configureStore';
 
-
-
 export const history = createBrowserHistory();
 
 ReactDOM.render(

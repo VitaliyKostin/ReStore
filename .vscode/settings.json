@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "API/bin/Release/net6.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/43aa3ec6-ecdf-4304-9c79-5114fd438e2e/resourceGroups/myResourceGroup/providers/Microsoft.Web/sites/ReStoreShop"
+}
